@@ -25,3 +25,25 @@ You should see a message like this:
 
 `Homebrew/homebrew-core (git revision 5bf515994a1; last commit 2022-05-11)`
 
+## Enable Git Tab Autocomplete for Zsh
+
+Before you start make sure your git installed. Use the following brew command install it.
+
+`brew install git`
+
+To check if installation is successfully completed use,
+
+`git --version`
+
+New Macs use the Zsh shell by default. If you’re using Zsh, add the following line to the ~/.zshrc file and restart your Terminal application:
+
+`autoload -Uz compinit && compinit`
+
+Alternatively, you can run the following two commands in your Terminal application to add the necessary line to the .zshrc file and restart your shell.
+
+`echo 'autoload -Uz compinit && compinit' >> ~/.zshrc`
+
+`source ~/.zshrc`
+
+Git tab autocomplete is now enabled on your Mac.
+
