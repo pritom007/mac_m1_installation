@@ -21,6 +21,7 @@ Next check if your brew installed properly. Use following command to check it:
 
 You should see a message like this:
 
-`Homebrew 3.4.11
-Homebrew/homebrew-core (git revision 5bf515994a1; last commit 2022-05-11)`
+`Homebrew 3.4.11`
+
+`Homebrew/homebrew-core (git revision 5bf515994a1; last commit 2022-05-11)`
 
