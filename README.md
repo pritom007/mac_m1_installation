@@ -25,25 +25,57 @@ You should see a message like this:
 
 `Homebrew/homebrew-core (git revision 5bf515994a1; last commit 2022-05-11)`
 
-## Enable Git Tab Autocomplete for Zsh
+## Install Python3 via brew
 
-Before you start make sure your git installed. Use the following brew command install it.
+First check what version of python is running in you mac with the following command.
 
-`brew install git`
+`python -V`
 
-To check if installation is successfully completed use,
+you should see something like this:
 
-`git --version`
+`Python 2.7.18`
 
-New Macs use the Zsh shell by default. If you’re using Zsh, add the following line to the ~/.zshrc file and restart your Terminal application:
+Note that this is python 2 so if you also have python3 pre-installed in you mac. Just type the following command to check that:
 
-`autoload -Uz compinit && compinit`
+`python3 -V`
 
-Alternatively, you can run the following two commands in your Terminal application to add the necessary line to the .zshrc file and restart your shell.
+you should see something like this:
 
-`echo 'autoload -Uz compinit && compinit' >> ~/.zshrc`
+`Python 3.8.9`
 
-`source ~/.zshrc`
+Now check where is you python3 installed using:
 
-Git tab autocomplete is now enabled on your Mac.
+`which -a python3`
+
+You should see:
+
+1)
+
+`/usr/bin/python3`
+
+or,
+
+2)
+`/opt/homebrew/bin/python3
+/usr/bin/python3`
+
+
+If you see 1, then your python was not installed using bre. Hence, managing the packages and versions will be confusing. To install python via brew use the following command:
+
+`brew install python`
+
+Once successfully installed you should be able to see 2, if you type `which -a python3`.
+
+However, your default python path is `/usr/bin/python3` so to change that run the following command.
+
+`hash -r
+type python3`
+
+Now you will notice that your python3 path is changed to:
+
+`python3 is /opt/homebrew/bin/python3`
+
+Also notice your pip3 path also changed.
+
+[Check for more details](!https://github.com/Homebrew/discussions/discussions/476)
 
