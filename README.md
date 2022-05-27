@@ -78,7 +78,7 @@ Also notice your pip3 path also changed.
 
 [Check for more details](!https://github.com/Homebrew/discussions/discussions/476)
 
-## Install Java in Mac M1
+## Install Java using Azul Zulu
 
 Installing java and jdk in new mac m1 os can be can be troublesome. The easiest way to install it is by using Azul zulu. Go to [Azul Zulu](!https://www.azul.com/downloads/?version=java-8-lts&os=macos&package=jdk#download-openjdk) and download the .dmg file for ARM 64 bit. Simply install it and after it is done check if java installed successfully by using:
 
