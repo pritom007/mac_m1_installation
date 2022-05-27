@@ -59,7 +59,6 @@ or,
 `/opt/homebrew/bin/python3
 /usr/bin/python3`
 
-
 If you see 1, then your python was not installed using bre. Hence, managing the packages and versions will be confusing. To install python via brew use the following command:
 
 `brew install python`
@@ -79,3 +78,15 @@ Also notice your pip3 path also changed.
 
 [Check for more details](!https://github.com/Homebrew/discussions/discussions/476)
 
+## Install Java in Mac M1
+
+Installing java and jdk in new mac m1 os can be can be troublesome. The easiest way to install it is by using Azul zulu. Go to [Azul Zulu](!https://www.azul.com/downloads/?version=java-8-lts&os=macos&package=jdk#download-openjdk) and download the .dmg file for ARM 64 bit. Simply install it and after it is done check if java installed successfully by using:
+
+`java -version`
+
+you should see something like:
+`openjdk version "1.8.0_332"`
+
+`OpenJDK Runtime Environment (Zulu 8.62.0.19-CA-macos-aarch64) (build 1.8.0_332-b09)`
+
+`OpenJDK 64-Bit Server VM (Zulu 8.62.0.19-CA-macos-aarch64) (build 25.332-b09, mixed mode)`
